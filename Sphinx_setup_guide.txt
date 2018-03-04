@@ -27,11 +27,9 @@
 
 # here y can see some permission Y/N, you may choose any or Enter for default 
 
-# (Be sure to say yes to the ìautodocî extension) and for separate folder option
+# (Be sure to say yes to the ‚Äúautodoc‚Äù extension) and for separate folder option
 
-6. 
-
-Next command
+6. Next command
 	
 	- make html
 
@@ -46,7 +44,7 @@ In your conf.py file:
 
 for api add the following lines in conf.py
 
-extensions = ['sphinx.ext.autodoc',
+    extensions = ['sphinx.ext.autodoc',
     'sphinx.ext.doctest',
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
