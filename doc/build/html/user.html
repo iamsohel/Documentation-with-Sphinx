@@ -1,0 +1,749 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Users &mdash; CRM 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="CRM 1.0 documentation" href="index.html"/>
+        <link rel="prev" title="Welcome to CRM’s documentation!" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> CRM
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Users</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#attributes">Attributes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user-role">user_role</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#role">role</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#login">login</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#forgotpassword">forgotPassword</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resetpassword">resetPassword</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verifyemail">verifyEmail</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#activate">activate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#checkemail">checkEmail</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggedinuser">loggedinUser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changepassword">changePassword</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updateavatar">updateAvatar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#find">find</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CRM</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Users</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/user.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="users">
+<h1>Users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h1>
+<p>This is users api documentations.</p>
+<div class="toctree-wrapper compound">
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">maxdepth:</th><td class="field-body">2
+:glob:</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>users<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>id</li>
+<li>first_name</li>
+<li>last_name</li>
+<li>email</li>
+<li>password</li>
+<li>active</li>
+<li>activation_code</li>
+<li>reset_code</li>
+<li>login_platform</li>
+<li>social_data</li>
+<li>last_login</li>
+<li>created</li>
+<li>modified</li>
+</ol>
+</div>
+<div class="section" id="user-role">
+<h3>user_role<a class="headerlink" href="#user-role" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>id</li>
+<li>user_id</li>
+<li>role_id</li>
+<li>created</li>
+<li>modified</li>
+</ol>
+</div>
+<div class="section" id="role">
+<h3>role<a class="headerlink" href="#role" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>id</li>
+<li>name</li>
+<li>description</li>
+<li>created</li>
+<li>modified</li>
+</ol>
+</div>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="login">
+<h3>login<a class="headerlink" href="#login" title="Permalink to this headline">¶</a></h3>
+<p>This is the user authentication function. User will provide his email and password to login this system. If he gives valid
+email and password, system will generate a access token for this user and return the user information like user id, name, email,
+user role, and access token.</p>
+<dl class="post">
+<dt id="post--login">
+<code class="descname">POST </code><code class="descname">/login</code><a class="headerlink" href="#post--login" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Example request</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>post /users/login/
+parameters : email, password
+Accept: text/javascript
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>Content-Type: application/json
+
+[
+  {
+    &quot;status&quot;: OK,
+    &quot;result&quot;:{
+               &quot;data&quot;:{
+                      &quot;token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InNyYW5hQGxlYXBpbmdsb2dpYy5jb20ifQ.Ui3XrvnuXg8OjFW9xk8BD3F0aG9HlgjYwQOEOYu5sLw&quot;,
+                      &quot;user_id&quot;:&quot;1&quot;,
+                      &quot;name&quot;:Sohel Rana,
+                      &quot;email&quot;:&quot;srana@leapinglogic.com&quot;,
+                      &quot;user_role&quot;: &quot;Admin, Developer&quot;
+                      },
+               &quot;message&quot;: &quot;Logged in successfully.&quot;
+            }
+  }
+]
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – OK
+:statuscode 400: NOK, error : bad request</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="forgotpassword">
+<h3>forgotPassword<a class="headerlink" href="#forgotpassword" title="Permalink to this headline">¶</a></h3>
+<p>If user forgot his/her password, he will provide his email to reset his password. When he will give password, system will
+check that users email is existed in database or not. If exists, system will send a email to that email address with a reset
+password link and activation_code. When user click that link, he can reset password.</p>
+<dl class="post">
+<dt id="post--forgotPassword">
+<code class="descname">POST </code><code class="descname">/forgotPassword</code><a class="headerlink" href="#post--forgotPassword" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Example request</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>post /users/forgotPassword/
+parameters : email
+Accept: text/javascript
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>Content-Type: application/json
+
+[
+  {
+    &quot;status&quot;: OK,
+    &quot;result&quot;:{
+               &quot;message&quot;: &quot;An email has been sent with reset password link.&quot;
+             }
+  }
+]
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – OK
+:statuscode 400: NOK, error : bad request
+:statuscode 500: internal server error, when email will not sent</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="resetpassword">
+<h3>resetPassword<a class="headerlink" href="#resetpassword" title="Permalink to this headline">¶</a></h3>
+<p>If user forgot his password, user will give his email address. System will send a reset password link to that email
+address. When user will click the reset password link, he can reset his password.</p>
+<dl class="post">
+<dt id="post--resetPassword">
+<code class="descname">POST </code><code class="descname">/resetPassword</code><a class="headerlink" href="#post--resetPassword" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Example request</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>post /users/resetPassword/
+parameters : activation_code
+Accept: text/javascript
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>Content-Type: application/json
+
+[
+  {
+    &quot;status&quot;: OK,
+    &quot;result&quot;:{
+               &quot;message&quot;: &quot;Password has been changed successfully.&quot;
+             }
+  }
+]
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – OK
+:statuscode 400: NOK, error : bad request</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="verifyemail">
+<h3>verifyEmail<a class="headerlink" href="#verifyemail" title="Permalink to this headline">¶</a></h3>
+<p>When user submit a signup form, an email will be sent to that submitted email address with account activation link. If user
+provides valid email, he will get that activation lin. After clicking the activation link, user can activate his account.</p>
+<dl class="post">
+<dt id="post--verifyEmail">
+<code class="descname">POST </code><code class="descname">/verifyEmail</code><a class="headerlink" href="#post--verifyEmail" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Example request</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>post /users/verifyEmail/
+parameters : email, activation_code
+Accept: text/javascript
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>Content-Type: application/json
+
+[
+  {
+    &quot;status&quot;: OK,
+    &quot;result&quot;:{
+               &quot;message&quot;: &quot;An email is sent to your email address. Please check your email and activate account.&quot;
+             }
+  }
+]
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – OK
+:statuscode 400: NOK, error : bad request
+:statuscode 500: internal server error, when email will not sent</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="activate">
+<h3>activate<a class="headerlink" href="#activate" title="Permalink to this headline">¶</a></h3>
+<p>When user clicks the account activation link from his email, this will check first this activation code is valid or not. If valid
+then it will check the account activation time is expired or not. By default after 7 days from sending activaion link will expired the
+account activation time. After verifing account activation time, then it will set the provided password and  the account will be activated.</p>
+<dl class="post">
+<dt id="post--activate-activation_code">
+<code class="descname">POST </code><code class="descname">/activate/activation_code</code><a class="headerlink" href="#post--activate-activation_code" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Example request</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>post /users/activate/
+parameters : activation_code, password
+Accept: text/javascript
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>Content-Type: application/json
+
+[
+  {
+    &quot;status&quot;: OK,
+    &quot;result&quot;:{
+               &quot;message&quot;: &quot;Your account has been activated successfully. Please login to your account.&quot;
+             }
+  }
+]
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – OK
+:statuscode 400: NOK, error : bad request</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="checkemail">
+<h3>checkEmail<a class="headerlink" href="#checkemail" title="Permalink to this headline">¶</a></h3>
+<p>To check user’s entered email is already existed in database or not. If exists, system will show message your entered email
+is already existed in database. Please give another unique email.</p>
+<dl class="post">
+<dt id="post--checkEmail">
+<code class="descname">POST </code><code class="descname">/checkEmail</code><a class="headerlink" href="#post--checkEmail" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Example request</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>post /users/checkEmail/
+parameters : email
+Accept: text/javascript
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>Content-Type: application/json
+
+[
+  {
+    &quot;status&quot;: OK,
+    &quot;result&quot;:{
+               &quot;message&quot;: &quot;This email is not existed.&quot;
+             }
+  }
+]
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – OK
+:statuscode 400: NOK, error : bad request</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="loggedinuser">
+<h3>loggedinUser<a class="headerlink" href="#loggedinuser" title="Permalink to this headline">¶</a></h3>
+<p>Get logged in user’s details from token. It will fetch the user and profile informations.</p>
+<dl class="get">
+<dt id="get--loggedinUser">
+<code class="descname">GET </code><code class="descname">/loggedinUser</code><a class="headerlink" href="#get--loggedinUser" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Example request</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>get /users/loggedinUser/
+parameters : token
+Accept: text/javascript
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>Content-Type: application/json
+
+{
+      &quot;status&quot;: &quot;OK&quot;,
+      &quot;result&quot;: {
+          &quot;payload&quot;: {
+              &quot;email&quot;: &quot;arakib@leapinglogic.com&quot;
+          },
+          &quot;data&quot;: {
+              &quot;id&quot;: 2,
+              &quot;first_name&quot;: &quot;Rakib&quot;,
+              &quot;last_name&quot;: &quot;Abdullah&quot;,
+              &quot;name&quot;: &quot;Rakib Abdullah&quot;,
+              &quot;email&quot;: &quot;arakib@leapinglogic.com&quot;,
+              &quot;phone&quot;: &quot;3425432544&quot;,
+              &quot;image&quot;: &quot;&quot;,
+              &quot;home_phone&quot;: &quot;0345327534&quot;,
+              &quot;mobile&quot;: &quot;04351978843978&quot;,
+              &quot;fax&quot;: &quot;43534253534&quot;,
+              &quot;facebook&quot;: &quot;&quot;,
+              &quot;google&quot;: &quot;&quot;,
+              &quot;linkedin&quot;: &quot;&quot;,
+              &quot;twitter&quot;: &quot;&quot;,
+              &quot;active&quot;: null
+          }
+      }
+}
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – OK
+:statuscode 403: NOK, error : No request data has found</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="changepassword">
+<h3>changePassword<a class="headerlink" href="#changepassword" title="Permalink to this headline">¶</a></h3>
+<p>Change user password.</p>
+<dl class="post">
+<dt id="post--changePassword-id">
+<code class="descname">POST </code><code class="descname">/changePassword/id</code><a class="headerlink" href="#post--changePassword-id" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Example request</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>post /users/changePassword/id
+parameters : token, id,  password
+Accept: text/javascript
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>Content-Type: application/json
+
+{
+    &quot;status&quot;: &quot;OK&quot;,
+    &quot;result&quot;: {
+                &quot;message&quot;: &quot;Password has been changed successfully.&quot;
+              }
+}
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – OK
+:statuscode 404: NOK, error : provided old_password and database password doesn’t match
+:statuscode 403: NOK, error : No request data has found</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="updateavatar">
+<h3>updateAvatar<a class="headerlink" href="#updateavatar" title="Permalink to this headline">¶</a></h3>
+<p>Update user avatar.</p>
+<dl class="post">
+<dt id="post--updateAvatar-id">
+<code class="descname">POST </code><code class="descname">/updateAvatar/id</code><a class="headerlink" href="#post--updateAvatar-id" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Example request</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>post /users/updateAvatar/
+parameters : token, id, image file
+Accept: text/javascript
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>Content-Type: application/json
+
+{
+    &quot;status&quot;: &quot;OK&quot;,
+    &quot;result&quot;: {
+                &quot;message&quot;: &quot;Avatar has been updated successfully.&quot;
+              }
+}
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – OK
+:statuscode 404: NOK, error : Avatar could not updated. Please try again.
+:statuscode 403: NOK, error : ‘No request data has found. Please upload avatar.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="find">
+<h3>find<a class="headerlink" href="#find" title="Permalink to this headline">¶</a></h3>
+<p>Search users by first_name or last_name, email</p>
+<dl class="get">
+<dt id="get--find?search=sohel">
+<code class="descname">GET </code><code class="descname">/find?search=sohel</code><a class="headerlink" href="#get--find?search=sohel" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Example request</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>get /users/find?search=sohel
+parameters : token, search
+Accept: text/javascript
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span></span>Content-Type: application/json
+
+{
+   &quot;status&quot;: &quot;OK&quot;,
+   &quot;result&quot;: {
+          &quot;data&quot;:
+          [
+              {
+                  &quot;id&quot; : 1
+                  &quot;first_name&quot;: &quot;Rakib&quot;,
+                  &quot;last_name&quot;: &quot;Abdullah&quot;,
+                  &quot;email&quot;: &quot;arakib@leapinglogic.com&quot;
+              }
+          ]
+   }
+}
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> – OK
+:statuscode 403: NOK, error : ‘No request data has found.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to CRM’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Sohel.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

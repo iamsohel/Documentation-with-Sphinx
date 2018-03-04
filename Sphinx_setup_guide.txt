@@ -1,0 +1,59 @@
+1. go to https://www.python.org/
+ 
+ 	 - download latest version of python
+
+2. environment set for
+	
+	- C:\Python
+	- C:\Python\Scripts
+
+
+3. go to https://bootstrap.pypa.io/get-pip.py
+	
+	- save in anywhere 
+
+
+4. run this the folder where u save above file
+
+	- python get-pip.py
+
+
+5. Now Go to your doc directory where u want to install Sphinx and run below commands
+	
+	- pip install sphinx
+	
+	- sphinx-quickstart
+
+
+# here y can see some permission Y/N, you may choose any or Enter for default 
+
+# (Be sure to say yes to the “autodoc” extension) and for separate folder option
+
+6. 
+
+Next command
+	
+	- make html
+
+For theme installation
+
+	- pip install sphinx_rtd_theme
+	
+In your conf.py file:
+	import sphinx_rtd_theme
+	html_theme = "sphinx_rtd_theme"
+	html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
+for api add the following lines in conf.py
+
+extensions = ['sphinx.ext.autodoc',
+    'sphinx.ext.doctest',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.todo',
+    'sphinx.ext.coverage',
+    'sphinx.ext.mathjax',
+    'sphinx.ext.ifconfig',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.githubpages',
+    'sphinxcontrib.httpdomain'
+    ]
